@@ -8,9 +8,9 @@ import Reviow from "./Reviow";
 const Home = () => {
   return (
     <div>
-      <div className="flex justify-evenly items-center">
-        <div className="w-[50%]">
-          <h1 className="text-5xl font-semibold mb-6 leading-tight">
+      <div className="lg:flex justify-evenly items-center">
+        <div className="lg:w-[50%] p-10 lg:p-0">
+          <h1 className="lg:text-5xl font-semibold mb-6 leading-tight">
             Welcome to{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 font-bold">
               RoboKingdom
