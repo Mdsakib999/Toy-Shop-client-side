@@ -2,6 +2,8 @@ import React from "react";
 import animation from "../assets/131315-bot-robot.json";
 import Lottie from "lottie-react";
 import Gallery from "./Gallery";
+import Category from "./Category";
+import Reviow from "./Reviow";
 
 const Home = () => {
   return (
@@ -27,6 +29,8 @@ const Home = () => {
         </div>
       </div>
       <Gallery></Gallery>
+      <Category></Category>
+      <Reviow></Reviow>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Header = () => {
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            {/* <svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
               fill="none"
@@ -20,7 +20,7 @@ const Header = () => {
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
               />
-            </svg> */}
+            </svg>
           </label>
           <ul
             tabIndex={0}
@@ -50,7 +50,7 @@ const Header = () => {
             src="https://img.freepik.com/free-vector/vintage-robot-toy-white-background_1308-77501.jpg?w=360&t=st=1684349843~exp=1684350443~hmac=d289b3e324b5c14753fae5ae678f5a0296e13a6bdc901e4c81bedd5cc06f26b5"
           />
         </div>
-        {/* <a className="btn btn-ghost normal-case text-xl"></a> */}
+        
         <p className="font-bold text-2xl cursor-pointer">
           Robo
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
@@ -65,7 +65,7 @@ const Header = () => {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <a>All Toy's</a>
+            <Link to="/allToys">All Toy's</Link>
           </li>
           <li>
             <Link to="/blog">Blog</Link>

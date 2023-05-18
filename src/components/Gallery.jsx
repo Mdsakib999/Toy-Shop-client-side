@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   return (
     <div>
-      <p className="font-bold text-4xl my-8 text-center">
+      <p className="font-bold text-4xl my-16 text-center">
         Our Unique Collection's{" "}
       </p>
       <div className="w-[95%] mx-auto grid lg:grid-cols-3 gap-y-8">
@@ -15,12 +16,15 @@ const Gallery = () => {
             <h2 className="card-title">Shoes!</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
+            
+              <Link to="/allToys">
               <button
                 className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
               >
                 Buy Now
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -32,12 +36,14 @@ const Gallery = () => {
             <h2 className="card-title">Shoes!</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
+            <Link to="/allToys">
               <button
                 className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
               >
                 Buy Now
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -49,12 +55,14 @@ const Gallery = () => {
             <h2 className="card-title">Shoes!</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
+            <Link to="/allToys">
               <button
                 className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
               >
                 Buy Now
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -66,12 +74,14 @@ const Gallery = () => {
             <h2 className="card-title">Shoes!</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
+            <Link to="/allToys">
               <button
                 className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
               >
                 Buy Now
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -83,12 +93,14 @@ const Gallery = () => {
             <h2 className="card-title">Shoes!</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
+            <Link to="/allToys">
               <button
                 className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
               >
                 Buy Now
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -100,12 +112,14 @@ const Gallery = () => {
             <h2 className="card-title">Shoes!</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
+            <Link to="/allToys">
               <button
                 className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
               >
                 Buy Now
               </button>
+              </Link>
             </div>
           </div>
         </div>
