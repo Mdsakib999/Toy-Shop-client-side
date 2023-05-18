@@ -12,22 +12,22 @@ const Footer = () => {
         </p>
       </div>
       <div>
-        <span className="footer-title">Services</span>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
+        <span className="footer-title">Business Opportunity</span>
+        <a className="link link-hover">Become a Marketplace Vendor</a>
+        <a className="link link-hover">Become a Dealer</a>
+        <a className="link link-hover">Suggest Your Products</a>
       </div>
       <div>
-        <span className="footer-title">Company</span>
+        <span className="footer-title">Get to Know US</span>
         <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
+        <a className="link link-hover">Security & Privacy</a>
+        <a className="link link-hover">Career</a>
       </div>
       <div>
-        <span className="footer-title">Legal</span>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
+        <span className="footer-title">Community</span>
+        <a className="link link-hover">Forums</a>
+        <a className="link link-hover">New's</a>
+        <a className="link link-hover">Robots</a>
       </div>
     </footer>
   );

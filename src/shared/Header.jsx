@@ -50,7 +50,7 @@ const Header = () => {
             src="https://img.freepik.com/free-vector/vintage-robot-toy-white-background_1308-77501.jpg?w=360&t=st=1684349843~exp=1684350443~hmac=d289b3e324b5c14753fae5ae678f5a0296e13a6bdc901e4c81bedd5cc06f26b5"
           />
         </div>
-        
+
         <p className="font-bold text-2xl cursor-pointer">
           Robo
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
@@ -62,7 +62,7 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="font-bold menu menu-horizontal px-1">
           <li>
-            <Link to='/'>Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/allToys">All Toy's</Link>
@@ -80,13 +80,14 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button
-          type="button"
-          className="px-4 py-2 rounded-md
+        <Link to="/login">
+          <button
+            className="px-4 py-2 rounded-md
           text-white font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
-        >
-          Login
-        </button>
+          >
+            Login
+          </button>
+        </Link>
       </div>
     </div>
   );
