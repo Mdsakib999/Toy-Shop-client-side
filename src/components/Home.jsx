@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import Gallery from "./Gallery";
 import Category from "./Category";
 import Reviow from "./Reviow";
+import RoboBg from "./RoboBg";
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       <div className="lg:flex justify-evenly items-center">
         <div className="lg:w-[50%] p-10 lg:p-0">
           <h1 className="lg:text-5xl font-semibold mb-4 leading-tight">
-            Welcome to{" "}
+            Welcome to
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 font-bold">
               RoboKingdom, 
             </span>
@@ -30,6 +31,7 @@ const Home = () => {
         </div>
       </div>
       <Gallery></Gallery>
+      <RoboBg></RoboBg>
       <Category></Category>
       <Reviow></Reviow>
     </div>
