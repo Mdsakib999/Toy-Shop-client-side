@@ -5,9 +5,11 @@ import Footer from '../shared/Footer';
 
 const Main = () => {
     return (
-        <div className='lg:w-[85%] mx-auto'>
+        <div className='lg:w-[90%] mx-auto'>
             <Header></Header>
-            <Outlet></Outlet>
+            <div className='min-h-[calc(100vh-100px)]'>
+                <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );
