@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Register = () => {
 
+  const {createUser, googleSignIn} = useContext(AuthContext)
 
     const [error, setError] = useState('');
 
@@ -11,13 +13,50 @@ const Register = () => {
     const [url, setUrl] = useState("");
     const [password, setPassword] = useState("");
 
+  const handleSignUp = (event)=>{
+    event.preventDefault();
+    setError('')
+    console.log(name, email, url, password);
+    if(!/.{6}/.test(password)) {
+      setError("Password should be at last 6 Character.");
+      return;
+    }
+
+    createUser(email, password)
+    
+    .then(result => {
+      const ceratedUser = result.user;
+      console.log(ceratedUser);
+      // navigate(from, {replace: true});
+    })
+    .catch(error => {
+      console.log(error);
+      setError(error.message);
+    })
+  };
+
+
+  const handelGoogleSignIn = () =>{
+    googleSignIn()
+    .then((result) => {
+      const loggedUser = result.user;
+      // toast.success("Login successfully!");
+      console.log(loggedUser);
+      // navigate(from, {replace: true});
+    })
+    .catch((error) => {
+      console.log(error.message);
+      setError(error.message);
+    });
+  };
+
 
     return (
         <div>
       <h1 className="text-4xl font-bold text-center mt-10 mb-5">Registration Page</h1>
 
       <form
-        // onSubmit={handleLogin}
+        onSubmit={handleSignUp}
         className="lg:w-[30%] mx-auto bg-slate-100 shadow-md rounded px-8 pt-6 pb-8 mb-10"
       >
         <div className="mb-4">
@@ -98,20 +137,13 @@ const Register = () => {
       <p className="text-red-600 text-center font-bold">{error}</p>
       <div className="text-center">
         <button
-        //   onClick={handelGoogleSignIn}
+          onClick={handelGoogleSignIn}
           className="b border-sky-500 bg-slate-50 rounded-lg ml-6 py-2 px-5 font-bold mb-10 hover:border-sky-500"
         >
           
-          <i class="fa-brands fa-google"></i> SignUp with Google
+          <i className="fa-brands fa-google"></i> SignUp with Google
         </button>
-        <br />
-        {/* <button
-        //   onClick={handelGithubSignIn}
-          className="b bg-slate-50 rounded-lg mt-5 ml-6 mb-20 py-2 px-5 font-bold "
-        >
-          {" "}
-          <i class="fa-brands fa-github text-xl"></i> Login with Github
-        </button> */}
+        
       </div>
     </div>
     );

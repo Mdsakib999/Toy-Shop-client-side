@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handelLogout = () => {
+    logOut()
+      .then()
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div className="navbar bg-base-100 sticky top-0 z-10">
       <div className="navbar-start">
@@ -70,24 +79,46 @@ const Header = () => {
           <li>
             <Link to="/blog">Blog</Link>
           </li>
-          <li>
-            <a>My Toy's</a>
-          </li>
+          {user && (
+            <>
+              <li>
+                <a>My Toy's</a>
+              </li>
 
-          <li>
-            <a>Add a Toy</a>
-          </li>
+              <li>
+                <a>Add a Toy</a>
+              </li>
+            </>
+          )}
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/login">
-          <button
-            className="px-4 py-2 rounded-md
+        {user && (
+          <Link>
+            <i className="fa-solid fa-user text-4xl mr-4"> </i>
+          </Link>
+        )}
+
+        {user ? (
+          <Link to="/login">
+            <button
+              onClick={handelLogout}
+              className="px-4 py-2 rounded-md
           text-white font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
-          >
-            Login
-          </button>
-        </Link>
+            >
+              Logout
+            </button>
+          </Link>
+        ) : (
+          <Link to="/login">
+            <button
+              className="px-4 py-2 rounded-md
+          text-white font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
+            >
+              Login
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );
