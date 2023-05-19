@@ -6,6 +6,8 @@ import AllToys from "../components/AllToys";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import Error from "../components/Error";
+import ToyDetails from "../components/ToyDetails";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -25,6 +27,11 @@ const router = createBrowserRouter([
       {
         path: "/allToys",
         element: <AllToys></AllToys>,
+      },
+      {
+        path: "/toys/:id",
+        element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
+        loader: ({params}) => fetch(`http://localhost:5000/toys/${params.id}`),
       },
       {
         path: "/login",

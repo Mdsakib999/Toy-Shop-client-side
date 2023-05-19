@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Login = () => {
@@ -7,9 +7,12 @@ const Login = () => {
     const {signIn, googleSignIn} = useContext(AuthContext);
 
 
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || "/"
+
 
     const [error, setError] = useState('');
-
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
