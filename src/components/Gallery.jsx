@@ -12,10 +12,10 @@ const Gallery = () => {
         elegance, creating an extraordinary tapestry of style and functionality.
       </p>
       <div className="w-[95%] mx-auto grid lg:grid-cols-3 gap-y-8">
-        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl">
+        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl hover:shadow-2xl">
           <figure>
             <img
-              className="h-[300px] w-[100%]"
+              className="h-[300px] w-[100%] p-5"
               src="https://i.ibb.co/8gd4zK0/carRobo3.jpg"
               alt="Shoes"
             />
@@ -35,10 +35,10 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl">
+        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl hover:shadow-2xl">
           <figure>
             <img
-              className="h-[300px] w-[100%]"
+              className="h-[300px] w-[100%] p-4"
               src="https://i.ibb.co/XLwMdxR/fighter-Robo2.jpg"
               alt="Shoes"
             />
@@ -58,7 +58,7 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl">
+        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl hover:shadow-2xl">
           <figure>
             <img
               className="h-[300px] w-[100%]"
@@ -81,10 +81,10 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl">
+        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl hover:shadow-2xl">
           <figure>
             <img
-              className="h-[300px] w-[100%]"
+              className="h-[300px] w-[100%] p-3"
               src="https://i.ibb.co/RYdcbhM/713-EYg68j3-L-AC-UL600-SR600-600.jpg"
               alt="Shoes"
             />
@@ -104,7 +104,7 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl">
+        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl hover:shadow-2xl">
           <figure>
             <img
               className="h-[300px] w-[100%]"
@@ -127,10 +127,10 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl">
+        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl hover:shadow-2xl">
           <figure>
             <img
-              className="h-[300px] w-[100%] p-2"
+              className="h-[300px] w-[100%] p-4"
               src="https://i.ibb.co/MDNdTNV/rovoCar.webp"
               alt="Robo Car"
             />

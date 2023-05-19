@@ -16,7 +16,7 @@ const ToyCard = ({ toy }) => {
         <h2 className="card-title">Name: {toy_name}</h2>
         <div className="flex justify-between font-bold">
             <p>Available: {availableQuantity}</p>
-            <p>{category}</p>
+            <p className="text-blue-600">{category}</p>
             <p><i className="fa-solid fa-star "> {rating}</i></p>
         </div>
         <div className="flex justify-between items-center gap-10 my-5">
