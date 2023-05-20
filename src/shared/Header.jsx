@@ -82,11 +82,11 @@ const Header = () => {
           {user && (
             <>
               <li>
-                <a>My Toy's</a>
+                <Link to="/myToys">My Toy's</Link>
               </li>
 
               <li>
-                <a>Add a Toy</a>
+                <Link to="/updateToys">Add a Toy</Link>
               </li>
             </>
           )}
@@ -95,12 +95,17 @@ const Header = () => {
       <div className="navbar-end">
         {user && (
           <Link>
-            <i className="fa-solid fa-user text-4xl mr-4"> </i>
+            <div className="avatar">
+              <div title={user.displayName} className="w-12 mr-5 mt- rounded-full">
+                <img src={user.photoURL} />
+              </div>
+            </div>
+            
           </Link>
         )}
 
         {user ? (
-          <Link to="/login">
+          <Link to="/">
             <button
               onClick={handelLogout}
               className="px-4 py-2 rounded-md

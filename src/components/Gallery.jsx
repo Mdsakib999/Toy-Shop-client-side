@@ -21,8 +21,7 @@ const Gallery = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">R8 Monster</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            
             <div className="card-actions justify-end">
               <Link to="/allToys">
                 <button
@@ -44,8 +43,7 @@ const Gallery = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Warrior Gang</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            
             <div className="card-actions justify-end">
               <Link to="/allToys">
                 <button
@@ -67,8 +65,7 @@ const Gallery = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Danger Daino!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            
             <div className="card-actions justify-end">
               <Link to="/allToys">
                 <button
@@ -90,8 +87,7 @@ const Gallery = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Robo Tommy</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            
             <div className="card-actions justify-end">
               <Link to="/allToys">
                 <button
@@ -113,8 +109,7 @@ const Gallery = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Robo Fighter</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            
             <div className="card-actions justify-end">
               <Link to="/allToys">
                 <button
@@ -136,8 +131,7 @@ const Gallery = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Car Monster</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            
             <div className="card-actions justify-end">
               <Link to="/allToys">
                 <button

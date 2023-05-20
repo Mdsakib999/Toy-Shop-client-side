@@ -8,6 +8,8 @@ import Register from "../components/Register";
 import Error from "../components/Error";
 import ToyDetails from "../components/ToyDetails";
 import PrivateRoute from "./PrivateRoute";
+import MyToys from "../components/MyToys";
+import UpdateToys from "../components/UpdateToys";
 
 
 const router = createBrowserRouter([
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/myToys",
+        element: <PrivateRoute><MyToys></MyToys></PrivateRoute>,
+      },
+      {
+        path: "/updateToys",
+        element: <PrivateRoute><UpdateToys></UpdateToys></PrivateRoute>,
       },
     ],
   },
