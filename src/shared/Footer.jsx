@@ -8,7 +8,11 @@ const Footer = () => {
         <p className="text-xl">
           RoboKingdom Industries Ltd.
           <br />
-          Providing Robot toys since 1992
+          Providing Robot toys since 1992.
+          <br />
+          Mobile: +945 1250 1486
+          <br />
+          Email: info@robokingdom.com.
         </p>
       </div>
       <div>

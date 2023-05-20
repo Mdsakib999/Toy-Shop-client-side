@@ -28,7 +28,7 @@ const Gallery = () => {
                   className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
                 >
-                  Buy Now
+                  See All
                 </button>
               </Link>
             </div>
@@ -50,7 +50,7 @@ const Gallery = () => {
                   className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
                 >
-                  Buy Now
+                  See All
                 </button>
               </Link>
             </div>
@@ -72,7 +72,7 @@ const Gallery = () => {
                   className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
                 >
-                  Buy Now
+                  See All
                 </button>
               </Link>
             </div>
@@ -94,7 +94,7 @@ const Gallery = () => {
                   className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
                 >
-                  Buy Now
+                  See All
                 </button>
               </Link>
             </div>
@@ -116,7 +116,7 @@ const Gallery = () => {
                   className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
                 >
-                  Buy Now
+                  See All
                 </button>
               </Link>
             </div>
@@ -138,7 +138,7 @@ const Gallery = () => {
                   className="px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
                 >
-                  Buy Now
+                  See All
                 </button>
               </Link>
             </div>

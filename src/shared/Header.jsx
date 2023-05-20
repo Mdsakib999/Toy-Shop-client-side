@@ -33,24 +33,28 @@ const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-semibold"
           >
             <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>All Toy's</a>
-            </li>
-            <li>
-              <a>Blog</a>
-            </li>
-            <li>
-              <a>My Toy's</a>
-            </li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/allToys">All Toy's</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          {user && (
+            <>
+              <li>
+                <Link to="/myToys">My Toy's</Link>
+              </li>
 
-            <li>
-              <a>Add a Toy</a>
-            </li>
+              <li>
+                <Link to="/updateToys">Add a Toy</Link>
+              </li>
+            </>
+          )}
           </ul>
         </div>
         <div className="w-8 rounded-full mr-2 cursor-pointer">
