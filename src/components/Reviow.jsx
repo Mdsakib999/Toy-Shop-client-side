@@ -3,8 +3,11 @@ import React from "react";
 const Reviow = () => {
   return (
     <div>
-      <p className="font-bold text-4xl my-16 text-center">Happy Customer's</p>
-
+      <p className="font-bold text-4xl mt-16 text-center">Happy Customer's</p>
+      <p className="text-center text-slate-500 lg:w-[60%] mx-auto mt-4 mb-16 p-5 lg:p-0">
+        There are different type of popular toy for young children. They can
+        help children learn about different animals and their habitats.
+      </p>
       <div>
         <div className="mb-16 carousel w-full">
           <div id="slide1" className="carousel-item relative w-full">

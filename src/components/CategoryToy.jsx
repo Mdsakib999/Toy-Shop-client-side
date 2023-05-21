@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ToyCard = ({ toy }) => {
-    const {_id, toy_name, image, price, rating, availableQuantity, category} = toy || {};
-  return (
-    <div className="card card-compact lg:w-80 bg-base-100 shadow-xl hover:shadow-2xl my-12">
+const CategoryToy = ({subToy}) => {
+    const {_id, toy_name, image, price, rating, availableQuantity, category} = subToy || {};
+    return (
+        <div className="card card-compact lg:w-80 bg-base-100 shadow-xl hover:shadow-2xl my-12">
       <figure>
         <img
           className="h-[300px] w-[100%] p-4 rounded-lg"
@@ -20,22 +20,12 @@ const ToyCard = ({ toy }) => {
             <p><i className="fa-solid fa-star "> {rating}</i></p>
         </div>
         <div className="flex justify-between items-center gap-10 my-5">
-          <>
-          <Link to={`/toys/${_id}`}>
-            <button
-              className="px-4 py-2 rounded-md
-          text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ..."
-            >
-              View Details
-            </button>
-          </Link>
-          </>
 
           <p className=" text-right text-2xl font-semibold">$ {price}</p>
         </div>
       </div>
     </div>
-  );
+    );
 };
 
-export default ToyCard;
+export default CategoryToy;

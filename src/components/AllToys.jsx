@@ -4,6 +4,7 @@ import ToyCard from './ToyCard';
 const AllToys = () => {
 
     const [toys, setToys] = useState([]);
+    
 
     useEffect( () =>{
         fetch('http://localhost:5000/toys')
@@ -23,7 +24,6 @@ const AllToys = () => {
                     key={toy._id}
                     toy={toy}
                     >
-
                     </ToyCard>)
                 }
             </div>

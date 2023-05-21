@@ -13,7 +13,19 @@ const UpdateToys = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
+
+    fetch("http://localhost:5000/addToys", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    })
+
+    .then(res => res.json())
+    .then(result => {
+        console.log(result);
+    })
     console.log(data);
+    alert('product added');
   };
 
   return (
@@ -54,11 +66,7 @@ const UpdateToys = () => {
             {...register("category")}
           >
             <option value="Fighter Robots">Fighter Robots</option>
-            <option
-              value="Car Robots"
-            >
-              Car Robots
-            </option>
+            <option value="Car Robots">Car Robots</option>
             <option value="Robo Animal">Animal Robot</option>
           </select>
 
@@ -74,7 +82,7 @@ const UpdateToys = () => {
           />
           <br />
 
-<label className="text-lg font-medium ">Seller Name:</label>
+          <label className="text-lg font-medium ">Seller Name:</label>
           <input
             className="text-input outline outline-offset-2 outline-cyan-500 p-2 rounded-lg m-5 "
             value={user?.displayName}
@@ -97,8 +105,8 @@ const UpdateToys = () => {
               options={options}
               isMulti
             /> */}
-            <br></br>
-            <label className="text-lg font-medium ">Description:</label>
+          <br></br>
+          <label className="text-lg font-medium ">Description:</label>
           <input
             className="text-input w-[32%] outline outline-offset-2 outline-cyan-500 p-2 rounded-lg m-5"
             {...register("description")}
@@ -114,9 +122,12 @@ const UpdateToys = () => {
           />
           <br></br>
           <div className="lg:w-[30%] mx-auto ">
-          <input className="submit-btn px-4 py-2 rounded-md
+            <input
+              className="submit-btn px-4 py-2 rounded-md
           text-white font-semibold text-base bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 ... w-[100%] mt-5 "
-            value="Add Toy" type="submit" />
+              value="Add Toy"
+              type="submit"
+            />
           </div>
         </form>
       </div>
