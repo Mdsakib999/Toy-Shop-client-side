@@ -15,16 +15,16 @@ const MyToys = (props) => {
 
   const onSubmit = (data) => {
 
-    // fetch("http://localhost:5000/addToys", {
-    //     method: "POST",
-    //     headers: {'Content-Type': 'application/json'},
-    //     body: JSON.stringify(data)
-    // })
+    fetch(`http://localhost:5000/`, {
+        method: "PUT",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    })
 
-    // .then(res => res.json())
-    // .then(result => {
-    //     console.log(result);
-    // })
+    .then(res => res.json())
+    .then(result => {
+        console.log(result);
+    })
     console.log(data);
     alert('product added');
   };
