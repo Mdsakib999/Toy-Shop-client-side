@@ -33,7 +33,7 @@ const MyToys = (props) => {
 
     const yes = confirm('Are you sure?');
     if(yes) {
-        fetch(`http://localhost:5000/toys/${id}`, {
+        fetch(`https://b7a11-toy-marketplace-server-side-mdsakib999.vercel.app/toys/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -52,7 +52,7 @@ const MyToys = (props) => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myToys/${user.email}`)
+    fetch(`https://b7a11-toy-marketplace-server-side-mdsakib999.vercel.app/myToys/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setMyToys(data);

@@ -14,7 +14,7 @@ const UpdateToys = () => {
   } = useForm();
   const onSubmit = (data) => {
 
-    fetch("http://localhost:5000/addToys", {
+    fetch("https://b7a11-toy-marketplace-server-side-mdsakib999.vercel.app/addToys", {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
