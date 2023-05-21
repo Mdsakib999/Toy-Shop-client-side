@@ -98,13 +98,6 @@ const UpdateToys = () => {
             placeholder="your email"
             type="email"
           />
-          {/* <CreatableSelect
-              className="w-75"
-              defaultValue={selectedOption}
-              onChange={setSelectedOption}
-              options={options}
-              isMulti
-            /> */}
           <br></br>
           <label className="text-lg font-medium ">Description:</label>
           <input
